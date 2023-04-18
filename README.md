@@ -59,3 +59,10 @@ Overall, Lunar Lander RL is an exciting and challenging problem in robotics that
 * In general, PPO tends to be more stable than A2C, while A2C can achieve  higher scores in some situations.
 
 * The choice between PPO and A2C will depend on the specific requirements of the task and the trade-offs between stability and speed of learning, as well as other factors such as network architecture and hyperparameter tuning.
+
+#### References 
+
+* Mnih, V., Badia, P. A.,  Mirza, M., Graves, A., Harley, T., Lillicrap, P. T., Silver, D., & Kavukcuoglu, K. (2017). Proximal Policy Optimization Algorithms. In OpenAI.
+
+* Schulman, J., Wolski, F.,  Dhariwal, P., Radford, A., & Klimov, O. (2016). Asynchronous Methods for Deep Reinforcement Learning. Proceedings of the 33rd International Conference on Machine Learning, New York, NY, USA, Vol. 40.
+
