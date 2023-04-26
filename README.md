@@ -5,7 +5,7 @@
 
 ## Abstract 
 
-This task is about Reinforcement Learning in which the task is to train a robot to land on the moon using reinforcement learning algorithms. The goal is to develop a robot that can autonomously navigate the lunar surface and safely land on a designated landing spot. For this task, used A2C and PPO algorithms are used.
+This task is about Reinforcement Learning in which the task is to train a robot to land on the moon using reinforcement learning algorithms. The goal is to develop a robot that can autonomously navigate the lunar surface and safely land on a designated landing spot. For this task, used **A2C** and **PPO** algorithms are used.
 
 
 <br>
