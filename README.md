@@ -1,7 +1,7 @@
 [Machine Learning for Robotics II](https://corsi.unige.it/en/off.f/2022/ins/60241)<br>
 **Programmer:** [Ankur Kohli](https://github.com/ankurkohli007)<br>
 [M.Sc Robotics Engineering](https://corsi.unige.it/corsi/10635)<br>
-[University of Genoa (UniGe)](https://unige.it/en)<br>
+[University of Genoa (UniGe), Italy](https://unige.it/en)<br>
 
 ## Abstract 
 
