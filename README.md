@@ -10,7 +10,8 @@
 This task is about Reinforcement Learning in which the task is to train a robot to land on the moon using reinforcement learning algorithms. The goal is to develop a robot that can autonomously navigate the lunar surface and safely land on a designated landing spot. For this task, used **A2C** and **PPO** algorithms are used.
 
 
-
+<br>
+<br>
 Reinforcement learning (RL) has shown great potential for robotic applications, particularly in tasks where the robot must learn from interaction with the environment and adapt to changing conditions. In RL, the robot learns a policy or set of behaviors that maximize a reward signal provided by the environment, rather than being explicitly programmed with a set of rules or actions.
 
 One of the main advantages of RL in robotics is its ability to learn from experience, allowing the robot to adapt to different environments and tasks without the need for manual intervention or programming. RL algorithms can also handle continuous state and action spaces, making them well-suited to many robotic tasks that require precise and continuous control.
