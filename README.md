@@ -83,6 +83,28 @@ The episode finishes if:
 
 * **v0:** Initial version
 
+## Important Libraries To Install
+
+```
+!pip install gym
+```
+
+```
+!pip install pyglet==1.5.27
+```
+
+```
+!pip install stable-baseline3
+```
+
+```
+!pip install "gymnasium[all]"
+```
+
+
+
+
+
 <br>
 <br>
 Reinforcement learning (RL) has shown great potential for robotic applications, particularly in tasks where the robot must learn from interaction with the environment and adapt to changing conditions. In RL, the robot learns a policy or set of behaviors that maximize a reward signal provided by the environment, rather than being explicitly programmed with a set of rules or actions.
