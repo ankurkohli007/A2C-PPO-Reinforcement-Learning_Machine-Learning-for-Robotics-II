@@ -3,7 +3,7 @@
 [M.Sc Robotics Engineering](https://corsi.unige.it/corsi/10635)<br>
 [University of Genoa (UniGe), Italy](https://unige.it/en)<br>
 
-# Reinforcement Learning using A2C Algorithm & PPO Algorithm
+# Reinforcement Learning using A2C Algorithm & PPO Algorithm for Lunar Lander 
 
 ## Abstract 
 
@@ -11,11 +11,11 @@ This task is about Reinforcement Learning in which the task is to train a robot 
 
 ## Problem Statement 
 
-The problem statement for Lunar Lander using RL (Reinforcement Learning) is to develop an AI agent that can successfully land a spacecraft on the moon's surface with minimal fuel consumption and without crashing. The agent needs to learn how to control the spacecraft's thrusters to navigate through the moon's gravitational field and adjust its velocity and orientation to achieve a safe landing. The task requires the agent to balance competing goals, such as reducing the spacecraft's speed and aligning its orientation with the landing site, while conserving fuel to ensure a successful landing. The agent's performance is measured by a reward function that provides feedback on its actions based on how close it is to the target landing site and how much fuel it has consumed. The goal of the RL agent is to learn an optimal policy that maximizes the cumulative reward over a given number of episodes, through trial-and-error interactions with the environment. The problem is challenging due to the high-dimensional state and action spaces, and the complex dynamics of the spacecraft and moon's environment.
+The problem statement for **Lunar Lander** using RL (Reinforcement Learning) is to develop an AI agent that can successfully land a spacecraft on the moon's surface with minimal fuel consumption and without crashing. The agent needs to learn how to control the spacecraft's thrusters to navigate through the moon's gravitational field and adjust its velocity and orientation to achieve a safe landing. The task requires the agent to balance competing goals, such as reducing the spacecraft's speed and aligning its orientation with the landing site, while conserving fuel to ensure a successful landing. The agent's performance is measured by a reward function that provides feedback on its actions based on how close it is to the target landing site and how much fuel it has consumed. The goal of the RL agent is to learn an optimal policy that maximizes the cumulative reward over a given number of episodes, through trial-and-error interactions with the environment. The problem is challenging due to the high-dimensional state and action spaces, and the complex dynamics of the spacecraft and moon's environment.
 
 ## Problem Solution
 
-The solution for the Lunar Lander problem using RL involves training an AI agent to learn how to control the spacecraft's thrusters to achieve a safe landing on the moon's surface. Here are the steps involved in developing an RL solution for this problem:
+The solution for the **Lunar Lander** problem using RL involves training an AI agent to learn how to control the spacecraft's thrusters to achieve a safe landing on the moon's surface. Here are the steps involved in developing an RL solution for this problem:
 
 * **Define the state space:** The state space consists of all relevant information that the agent needs to make decisions. In the case of Lunar Lander, the state space may include the spacecraft's position, velocity, orientation, angular velocity, and fuel remaining.
 
@@ -23,7 +23,7 @@ The solution for the Lunar Lander problem using RL involves training an AI agent
 
 * **Define the reward function:** The reward function provides feedback to the agent on its actions. In the case of Lunar Lander, the reward function may provide positive rewards for moving closer to the target landing site and negative rewards for crashing or using too much fuel.
 
-* **Choose an RL algorithm:** There are various RL algorithms available, such as Q-learning, SARSA, and policy gradients. Each algorithm has its strengths and weaknesses, and the choice depends on the specific problem and requirements.
+* **Choose an RL algorithm:** There are various RL algorithms available, such as Q-learning, SARSA, A2C, PPO and policy gradients. Each algorithm has its strengths and weaknesses, and the choice depends on the specific problem and requirements.
 
 * **Train the RL agent:** The RL agent interacts with the environment, observes its state, takes actions, and receives rewards. Over time, the agent learns an optimal policy that maximizes the cumulative reward.
 
@@ -32,6 +32,8 @@ The solution for the Lunar Lander problem using RL involves training an AI agent
 * **Iterate and improve:** RL is an iterative process, and the RL agent can be further improved by adjusting the hyperparameters, modifying the reward function, or changing the algorithm.
 
 In summary, the solution for the Lunar Lander problem using RL involves defining the state space, action space, and reward function, choosing an RL algorithm, training the RL agent, evaluating its performance, and iteratively improving it. Through this process, the RL agent can learn to control the spacecraft's thrusters to achieve a safe landing on the moon's surface with minimal fuel consumption and without crashing.
+
+
 
 
 <br>
