@@ -100,8 +100,7 @@ The episode finishes if:
 ```
 !pip install "gymnasium[all]"
 ```
-
-
+* **Note:** This task is done on ***JupyterNotebook***. For the installation of ***JupyterNotebook*** [click here](https://github.com/ankurkohli007/Research_Track_II_Assignment_1_JupyterNotebook).  
 
 
 
