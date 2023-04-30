@@ -43,6 +43,12 @@ This environment is part of the [Box2D environments](https://www.gymlibrary.dev/
 * Observation Low [-1.5 -1.5 -5. -5. -3.14 -5. -0. -0. ]
 * Import gymnasium.make("LunarLander-v2")
 
+## Description
+
+This environment is a classic rocket trajectory optimization problem. According to Pontryagin’s maximum principle, it is optimal to fire the engine at full throttle or turn it off. This is the reason why this environment has discrete actions: engine on or off.
+
+There are two environment versions: discrete or continuous. The landing pad is always at coordinates (0,0). The coordinates are the first two numbers in the state vector. Landing outside of the landing pad is possible. Fuel is infinite, so an agent can learn to fly and then land on its first attempt.
+
 
 <br>
 <br>
