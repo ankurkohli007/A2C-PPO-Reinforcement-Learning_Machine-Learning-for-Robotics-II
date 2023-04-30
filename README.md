@@ -75,6 +75,14 @@ The episode finishes if:
 
 *When Box2D determines that a body (or group of bodies) has come to rest, the body enters a sleep state which has very little CPU overhead. If a body is awake and collides with a sleeping body, then the sleeping body wakes up. Bodies will also wake up if a joint or contact attached to them is destroyed.*
 
+### Version History
+
+* **v2:** Count energy spent and in v0.24, added turbulance with wind power and turbulence_power parameters
+
+* **v1:** Legs contact with ground added in state vector; contact with ground give +10 reward points, and -10 if then lose contact; reward renormalized to 200; harder initial random push.
+
+* **v0:** Initial version
+
 <br>
 <br>
 Reinforcement learning (RL) has shown great potential for robotic applications, particularly in tasks where the robot must learn from interaction with the environment and adapt to changing conditions. In RL, the robot learns a policy or set of behaviors that maximize a reward signal provided by the environment, rather than being explicitly programmed with a set of rules or actions.
