@@ -9,6 +9,10 @@
 
 This task is about Reinforcement Learning in which the task is to train a robot to land on the moon using reinforcement learning algorithms. The goal is to develop a robot that can autonomously navigate the lunar surface and safely land on a designated landing spot. For this task, used **A2C** and **PPO** algorithms are used.
 
+## Problem Statement 
+
+The problem statement for Lunar Lander using RL (Reinforcement Learning) is to develop an AI agent that can successfully land a spacecraft on the moon's surface with minimal fuel consumption and without crashing. The agent needs to learn how to control the spacecraft's thrusters to navigate through the moon's gravitational field and adjust its velocity and orientation to achieve a safe landing. The task requires the agent to balance competing goals, such as reducing the spacecraft's speed and aligning its orientation with the landing site, while conserving fuel to ensure a successful landing. The agent's performance is measured by a reward function that provides feedback on its actions based on how close it is to the target landing site and how much fuel it has consumed. The goal of the RL agent is to learn an optimal policy that maximizes the cumulative reward over a given number of episodes, through trial-and-error interactions with the environment. The problem is challenging due to the high-dimensional state and action spaces, and the complex dynamics of the spacecraft and moon's environment.
+
 
 <br>
 <br>
