@@ -135,7 +135,9 @@ Several techniques have been used to tackle the Lunar Lander RL problem, includi
 Overall, Lunar Lander RL is an exciting and challenging problem in robotics that has the potential to advance our understanding of machine learning and autonomous navigation.
 
 
-## Comaprison between PPO & A2C Algorithms
+## General Comaprison between PPO & A2C Algorithms
+
+From the aforementioned task implementation, genera comparsion of the two stated alfgorithms is concluded below:
 
 * PPO is a policy optimization method that aims to maximize the expected reward of a policy while ensuring that the update is not too far from the previous policy. Whereas, A2C is an on-policy method that learns both a policy and a value function. The advantage of A2C is that it can use the value function estimate to reduce the variance of the policy gradient.
 
