@@ -114,7 +114,7 @@ Several techniques have been used to tackle the Lunar Lander RL problem, includi
 Overall, Lunar Lander RL is an exciting and challenging problem in robotics that has the potential to advance our understanding of machine learning and autonomous navigation.
 
 
-#### Comaprison between PPO & A2C Algorithms
+## Comaprison between PPO & A2C Algorithms
 
 * PPO is a policy optimization method that aims to maximize the expected reward of a policy while ensuring that the update is not too far from the previous policy. Whereas, A2C is an on-policy method that learns both a policy and a value function. The advantage of A2C is that it can use the value function estimate to reduce the variance of the policy gradient.
 
@@ -126,7 +126,7 @@ Overall, Lunar Lander RL is an exciting and challenging problem in robotics that
 
 * Both algorithms can struggle to learn long-term dependencies in the Lunar Lander environment and may require additional techniques such as recurrent networks or curriculum learning to overcome this limitation.
 
-#### Limitations of PPO & A2C Algorithms 
+## Limitations of PPO & A2C Algorithms 
 
 * PPO and A2C can suffer from slow convergence and require careful tuning of hyperparameters to achieve good performance.
 
@@ -138,7 +138,7 @@ Overall, Lunar Lander RL is an exciting and challenging problem in robotics that
 
 * The choice between PPO and A2C will depend on the specific requirements of the task and the trade-offs between stability and speed of learning, as well as other factors such as network architecture and hyperparameter tuning.
 
-#### References 
+## References 
 
 * Mnih, V., Badia, P. A.,  Mirza, M., Graves, A., Harley, T., Lillicrap, P. T., Silver, D., & Kavukcuoglu, K. (2017). Proximal Policy Optimization Algorithms. In OpenAI.
 
