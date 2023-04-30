@@ -33,7 +33,7 @@ The solution for the **Lunar Lander** problem using RL involves training an AI a
 
 In summary, the solution for the Lunar Lander problem using RL involves defining the state space, action space, and reward function, choosing an RL algorithm, training the RL agent, evaluating its performance, and iteratively improving it. Through this process, the RL agent can learn to control the spacecraft's thrusters to achieve a safe landing on the moon's surface with minimal fuel consumption and without crashing.
 
-## Parameter & Lunar Lander Environment Information
+## Parameter & Environment Information
 
 This environment is part of the [Box2D environments](https://www.gymlibrary.dev/environments/box2d/). Please read that page first for general information.
 
