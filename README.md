@@ -49,6 +49,13 @@ This environment is a classic rocket trajectory optimization problem. According 
 
 There are two environment versions: discrete or continuous. The landing pad is always at coordinates (0,0). The coordinates are the first two numbers in the state vector. Landing outside of the landing pad is possible. Fuel is infinite, so an agent can learn to fly and then land on its first attempt.
 
+### Action Space
+
+There are four discrete actions available: do nothing, fire left orientation engine, fire main engine, fire right orientation engine.
+
+### Observation Space
+
+The state is an 8-dimensional vector: the coordinates of the lander in ```x``` & ```y```, its linear velocities in ```x``` & ```y```, its angle, its angular velocity, and two booleans that represent whether each leg is in contact with the ground or not.
 
 <br>
 <br>
