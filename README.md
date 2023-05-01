@@ -111,9 +111,27 @@ pip install "gymnasium[all]"
 ```
 * **Note:** This task is performed on ***JupyterNotebook***. For the installation of ***JupyterNotebook*** [click here](https://github.com/ankurkohli007/Research_Track_II_Assignment_1_JupyterNotebook).  
 
+## Strategy
 
+First, import the required libraries as given below:
 
-
+```
+import numpy as np
+import imageio
+import os
+from stable_baselines3 import PPO, A2C
+from stable_baselines3.common.env_util import make_vec_env
+from stable_baselines3.common.vec_env import DummyVecEnv, VecFrameStack, SubprocVecEnv
+from stable_baselines3.common.callbacks import BaseCallback
+from stable_baselines3.common.results_plotter import load_results, ts2xy
+from stable_baselines3.common.monitor import Monitor
+from stable_baselines3.common import results_plotter
+import gymnasium  as gym
+import matplotlib.pyplot as plt
+from stable_baselines3.common.evaluation import evaluate_policy
+import scipy.stats as stats
+from stable_baselines3.common.vec_env import VecVideoRecorder, DummyVecEnv 
+```
 
 
 ## Comaprison between PPO & A2C Algorithms
