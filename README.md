@@ -35,7 +35,7 @@ In summary, the solution for the Lunar Lander problem using RL involves defining
 
 ## Parameter & Environment Information
 
-This environment is part of the [Box2D environments](https://www.gymlibrary.dev/environments/box2d/). Please read that page first for general information.
+This environment is part of the [Box2D environments](https://www.gymlibrary.dev/environments/box2d/).
 
 * Action Space Discrete(4)
 * Observation Shape (8,)
