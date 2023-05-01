@@ -157,7 +157,7 @@ print("Mean Reward after {} max run is {}".format(MAX_RUN, np.mean(np.array(rewa
 
 The performance of the baseline model can be evaluated by measuring its success rate in landing the spacecraft on the target site and its fuel consumption. Once the baseline model's performance is established, more sophisticated models can be developed and compared to determine if they can improve upon the baseline performance.
 
-Overall, a baseline model in ML RL is an essential starting point for evaluating the effectiveness of more complex models and determining if the additional complexity is justified. It provides a reference point for comparing different algorithms and feature representations and can help researchers identify areas for further improvement.
+Overall, a baseline model in Machine Learning Reinforcement Learning is an essential starting point for evaluating the effectiveness of more complex models and determining if the additional complexity is justified. It provides a reference point for comparing different algorithms and feature representations and can help researchers identify areas for further improvement.
 
 ## Comaprison between PPO & A2C Algorithms
 
