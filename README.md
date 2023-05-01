@@ -113,7 +113,7 @@ pip install "gymnasium[all]"
 
 ## Strategy
 
-First, import the required libraries as given below:
+Firstly, import the required libraries as given below:
 
 ```
 import numpy as np
@@ -133,6 +133,31 @@ import scipy.stats as stats
 from stable_baselines3.common.vec_env import VecVideoRecorder, DummyVecEnv 
 ```
 
+Secondly, the **BaseLine Model** which refers to a simple model that serves as a reference point for comparing the performance of more complex models. It is typically the most basic model that can solve the problem at hand, and its performance provides a benchmark for evaluating the effectiveness of more sophisticated models.
+
+In the case of the Lunar Lander problem, a baseline model may involve a simple Q-learning algorithm with a basic feature representation of the state space, such as the spacecraft's position and velocity. The baseline model may use a straightforward reward function that provides a positive reward for landing on the target site and a negative reward for crashing or using too much fuel. Below is the code of baseline model of our task:
+
+
+```
+rewards = []
+obs = env.reset()
+done = False
+MAX_RUN = 10
+
+for i in range(MAX_RUN):
+    while not done:
+        env.render()
+        action_sample = env.action_space.sample()
+        # let's take a step in the environment 
+        obs, rwd, done, info ,_  = env.step(action_sample)
+        rewards.append(rwd)
+env.close()
+print("Mean Reward after {} max run is {}".format(MAX_RUN, np.mean(np.array(rewards))))
+```
+
+The performance of the baseline model can be evaluated by measuring its success rate in landing the spacecraft on the target site and its fuel consumption. Once the baseline model's performance is established, more sophisticated models can be developed and compared to determine if they can improve upon the baseline performance.
+
+Overall, a baseline model in ML RL is an essential starting point for evaluating the effectiveness of more complex models and determining if the additional complexity is justified. It provides a reference point for comparing different algorithms and feature representations and can help researchers identify areas for further improvement.
 
 ## Comaprison between PPO & A2C Algorithms
 
