@@ -85,7 +85,7 @@ The episode finishes if:
 
 Below is the code shows the version history of the LunarLander is **v2**. Also, **action** and **shape of observation**. 
 
-```
+```python
 env = gym.make("LunarLander-v2", render_mode="human")
 
 print("The Action inter is descrete {}".format(env.action_space.n))
@@ -115,7 +115,7 @@ pip install "gymnasium[all]"
 
 Firstly, import the required libraries as given below:
 
-```
+```python
 import numpy as np
 import imageio
 import os
@@ -138,7 +138,7 @@ Secondly, the **BaseLine Model** which refers to a simple model that serves as a
 In the case of the Lunar Lander problem, a baseline model may involve a simple algorithm with a basic feature representation of the state space, such as the spacecraft's position and velocity. The baseline model may use a straightforward reward function that provides a positive reward for landing on the target site and a negative reward for crashing or using too much fuel. Below is the code of baseline model of our task:
 
 
-```
+```python
 rewards = []
 obs = env.reset()
 done = False
