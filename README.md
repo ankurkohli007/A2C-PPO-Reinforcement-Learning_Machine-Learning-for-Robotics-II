@@ -86,21 +86,21 @@ The episode finishes if:
 ## Important Libraries To Install
 
 ```
-!pip install gym
+pip install gym
 ```
 
 ```
-!pip install pyglet==1.5.27
+pip install pyglet==1.5.27
 ```
 
 ```
-!pip install stable-baseline3
+pip install stable-baseline3
 ```
 
 ```
-!pip install "gymnasium[all]"
+pip install "gymnasium[all]"
 ```
-* **Note:** This task is done on ***JupyterNotebook***. For the installation of ***JupyterNotebook*** [click here](https://github.com/ankurkohli007/Research_Track_II_Assignment_1_JupyterNotebook).  
+* **Note:** This task is performed on ***JupyterNotebook***. For the installation of ***JupyterNotebook*** [click here](https://github.com/ankurkohli007/Research_Track_II_Assignment_1_JupyterNotebook).  
 
 
 
