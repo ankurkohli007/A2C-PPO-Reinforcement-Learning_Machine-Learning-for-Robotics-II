@@ -135,7 +135,7 @@ from stable_baselines3.common.vec_env import VecVideoRecorder, DummyVecEnv
 
 Secondly, the **BaseLine Model** which refers to a simple model that serves as a reference point for comparing the performance of more complex models. It is typically the most basic model that can solve the problem at hand, and its performance provides a benchmark for evaluating the effectiveness of more sophisticated models.
 
-In the case of the Lunar Lander problem, a baseline model may involve a simple Q-learning algorithm with a basic feature representation of the state space, such as the spacecraft's position and velocity. The baseline model may use a straightforward reward function that provides a positive reward for landing on the target site and a negative reward for crashing or using too much fuel. Below is the code of baseline model of our task:
+In the case of the Lunar Lander problem, a baseline model may involve a simple algorithm with a basic feature representation of the state space, such as the spacecraft's position and velocity. The baseline model may use a straightforward reward function that provides a positive reward for landing on the target site and a negative reward for crashing or using too much fuel. Below is the code of baseline model of our task:
 
 
 ```
