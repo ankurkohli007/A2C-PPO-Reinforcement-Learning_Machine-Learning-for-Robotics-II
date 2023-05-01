@@ -83,6 +83,15 @@ The episode finishes if:
 
 * **v0:** Initial version
 
+Below is the code shows the version history of the LunarLander is **v2**. Also, **action** and **shape of observation**. 
+
+```
+env = gym.make("LunarLander-v2", render_mode="human")
+
+print("The Action inter is descrete {}".format(env.action_space.n))
+print("Shape of Observation is {}".format(env.observation_space.sample().shape))
+```
+
 ## Important Libraries To Install
 
 ```
