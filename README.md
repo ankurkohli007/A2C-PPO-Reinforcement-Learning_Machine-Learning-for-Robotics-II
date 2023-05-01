@@ -83,7 +83,7 @@ The episode finishes if:
 
 * **v0:** Initial version
 
-Below is the code shows the version history of the LunarLander is **v2**. Also, **action** and **shape of observation**. 
+In this taks version **v2** is used. Below is the code shows the version history of the LunarLander is **v2**. Also, **action** and **shape of observation**. 
 
 ```python
 env = gym.make("LunarLander-v2", render_mode="human")
