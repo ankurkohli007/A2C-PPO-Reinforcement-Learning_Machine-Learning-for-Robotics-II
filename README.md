@@ -161,7 +161,7 @@ Overall, a baseline model in Machine Learning Reinforcement Learning is an essen
 
 ## Comaprison between PPO & A2C Algorithms
 
-From the aforementioned task implementation, general comparsion of the two stated alfgorithms is concluded below:
+From the aforementioned task implementation, general comparsion of the two stated algorithms is concluded below:
 
 * PPO is a policy optimization method that aims to maximize the expected reward of a policy while ensuring that the update is not too far from the previous policy. Whereas, A2C is an on-policy method that learns both a policy and a value function. The advantage of A2C is that it can use the value function estimate to reduce the variance of the policy gradient.
 
@@ -175,7 +175,7 @@ From the aforementioned task implementation, general comparsion of the two state
 
 ## Limitations of PPO & A2C Algorithms 
 
-From the aforementioned task implementation, general limitation of the two stated alfgorithms is concluded below:
+From the aforementioned task implementation, general limitation of the two stated algorithms is concluded below:
 
 * PPO and A2C can suffer from slow convergence and require careful tuning of hyperparameters to achieve good performance.
 
