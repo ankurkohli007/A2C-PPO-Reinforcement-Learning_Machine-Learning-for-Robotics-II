@@ -113,6 +113,8 @@ pip install "gymnasium[all]"
 
 ## Strategy
 
+#### Important Libraries
+
 Firstly, import the required libraries as given below:
 
 ```python
@@ -133,10 +135,11 @@ import scipy.stats as stats
 from stable_baselines3.common.vec_env import VecVideoRecorder, DummyVecEnv 
 ```
 
+#### Baseline Model
+
 Secondly, the **BaseLine Model** which refers to a simple model that serves as a reference point for comparing the performance of more complex models. It is typically the most basic model that can solve the problem at hand, and its performance provides a benchmark for evaluating the effectiveness of more sophisticated models.
 
 In the case of the Lunar Lander problem, a baseline model may involve a simple algorithm with a basic feature representation of the state space, such as the spacecraft's position and velocity. The baseline model may use a straightforward reward function that provides a positive reward for landing on the target site and a negative reward for crashing or using too much fuel. Below is the code of baseline model of our task:
-
 
 ```python
 rewards = []
@@ -158,6 +161,59 @@ print("Mean Reward after {} max run is {}".format(MAX_RUN, np.mean(np.array(rewa
 The performance of the baseline model can be evaluated by measuring its success rate in landing the spacecraft on the target site and its fuel consumption. Once the baseline model's performance is established, more sophisticated models can be developed and compared to determine if they can improve upon the baseline performance.
 
 Overall, a baseline model in Machine Learning Reinforcement Learning is an essential starting point for evaluating the effectiveness of more complex models and determining if the additional complexity is justified. It provides a reference point for comparing different algorithms and feature representations and can help researchers identify areas for further improvement.
+
+#### Reinforcement Learning (RL) For Training The Model
+
+Furthermore, RL can be used for training a model by treating the model as the agent and the data as the environment. The model can make predictions or take actions based on the data, and the rewards or penalties can be based on the accuracy of the predictions or the success of the actions. Below is the code of RL for training the model of our task:
+
+```python
+class SaveOnBestTrainingRewardCallback(BaseCallback):
+    """
+    Callback for saving a model (the check is done every ``check_freq`` steps)
+    based on the training reward (in practice, we recommend using ``EvalCallback``).
+
+    :param check_freq: (int)
+    :param log_dir: (str) Path to the folder where the model will be saved.
+      It must contains the file created by the ``Monitor`` wrapper.
+    :param verbose: (int)
+    """
+    def __init__(self, check_freq: int, log_dir: str, verbose=1):
+        super(SaveOnBestTrainingRewardCallback, self).__init__(verbose)
+        self.check_freq = check_freq
+        self.log_dir = log_dir
+        self.save_path = os.path.join(log_dir, 'best_model')
+        self.best_mean_reward = -np.inf
+
+    def _init_callback(self) -> None:
+        # Create folder if needed
+        if self.save_path is not None:
+            os.makedirs(self.save_path, exist_ok=True)
+
+    def _on_step(self) -> bool:
+        if self.n_calls % self.check_freq == 0:
+
+          # Retrieve training reward
+          x, y = ts2xy(load_results(self.log_dir), 'timesteps')
+          if len(x) > 0:
+              # Mean training reward over the last 100 episodes
+              mean_reward = np.mean(y[-100:])
+              if self.verbose > 0:
+                print(f"Num timesteps: {self.num_timesteps}")
+                print(f"Best mean reward: {self.best_mean_reward:.2f} - Last mean reward per episode: {mean_reward:.2f}")
+
+              # New best model, you could save the agent here
+              if mean_reward > self.best_mean_reward:
+                  self.best_mean_reward = mean_reward
+                  # Example for saving best model
+                  if self.verbose > 0:
+                    print(f"Saving new best model to {self.save_path}.zip")
+                  self.model.save(self.save_path)
+
+        return True
+```
+
+
+
 
 ## Comaprison between PPO & A2C Algorithms
 
