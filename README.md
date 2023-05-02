@@ -212,6 +212,26 @@ class SaveOnBestTrainingRewardCallback(BaseCallback):
         return True
 ```
 
+#### Model Training for A2C & PPO Algorithms
+
+Moreover, two RL algorithms A2C & PPO were used to accomplish the goal the task. Below is the code which shows the implementation of A2C algorithm: 
+
+```python
+env = make_vec_env("LunarLander-v2", n_envs=1,monitor_dir="log_dir_A2C_8/")
+
+policy = "MlpPolicy"
+n_steps = 100
+learning_rate = 0.0003
+batch_size = 256
+n_epochs = 10
+
+callback = SaveOnBestTrainingRewardCallback(check_freq=1000, log_dir="log_dir_A2C_8/")
+# instantiate the agent 
+model = A2C(policy, env, learning_rate = learning_rate, n_steps = n_steps,tensorboard_log="./TensorBoardLog/", verbose=1)
+# train the agent
+model.learn(total_timesteps=8000000, callback=callback)
+```
+
 
 
 
