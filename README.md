@@ -232,9 +232,23 @@ model = A2C(policy, env, learning_rate = learning_rate, n_steps = n_steps,tensor
 model.learn(total_timesteps=8000000, callback=callback)
 ```
 
+Also, for PPO algorithm implementation the code remain the same only change the log directory such as ```env = make_vec_env("LunarLander-v2", n_envs=1,monitor_dir="log_dir_PPO_8/")``` and change the model where instantiate the agent such as ```model = PPO(policy, env, learning_rate = learning_rate, n_steps = n_steps,tensorboard_log="./TensorBoardLog/", verbose=1)```. Below code shows the full implementation of the PPO algorithm:   
 
+```python
+env = make_vec_env("LunarLander-v2", n_envs=1,monitor_dir="log_dir_PPO_8/")
 
+policy = "MlpPolicy"
+n_steps = 100
+learning_rate = 0.0003
+batch_size = 256
+n_epochs = 10
 
+callback = SaveOnBestTrainingRewardCallback(check_freq=1000, log_dir="log_dir_A2C_8/")
+# instantiate the agent 
+model = PPO(policy, env, learning_rate = learning_rate, n_steps = n_steps,tensorboard_log="./TensorBoardLog/", verbose=1)
+# train the agent
+model.learn(total_timesteps=8000000, callback=callback)
+```
 ## Comaprison between PPO & A2C Algorithms
 
 From the aforementioned task implementation, general comparsion of the two stated algorithms is concluded below:
