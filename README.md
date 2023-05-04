@@ -249,7 +249,7 @@ model = PPO(policy, env, learning_rate = learning_rate, n_steps = n_steps,tensor
 # train the agent
 model.learn(total_timesteps=8000000, callback=callback)
 ```
-* **Note:** Hyperparameters such as *learning_rate*, *batch_size*, *n_steps*, *n_epochs*, and so on remains the same in both the cases. After model training a comparison between A2C & PPO were concluded according to the observation.  
+* **Note:** Hyperparameters such as *learning_rate*, *batch_size*, *n_steps*, *n_epochs*, and so on remains the same in both the cases. After model training a comparison between A2C & PPO were concluded according to the observation. Also, for both A2C & PPO algorithms model is trained for **50,00,000** **timesteps** & **80,00,000** **timesteps**  
 
 ## Comaprison between PPO & A2C Algorithms
 
