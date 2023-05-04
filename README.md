@@ -253,7 +253,41 @@ model.learn(total_timesteps=8000000, callback=callback)
 
 #### Plotting 
 
-In this part, trained model for 50,00,000 & 80,00,000 timesteps is ploted for both the proposed aforementioned algorithms.
+In this part, trained model for 50,00,000 & 80,00,000 timesteps is ploted for both the proposed aforementioned algorithms. Below is the code defined for plotting of data:
+
+```python
+def moving_average(values, window):
+    """
+    Smooth values by doing a moving average
+    :param values: (numpy array)
+    :param window: (int)
+    :return: (numpy array)
+    """
+    weights = np.repeat(1.0, window) / window
+    return np.convolve(values, weights, 'valid')
+
+def plot_results(log_folder, title='Learning Curve'):
+    """
+    plot the results
+
+    :param log_folder: (str) the save location of the results to plot
+    :param title: (str) the title of the task to plot
+    """
+
+    x, y = ts2xy(load_results(log_folder), 'timesteps')
+    y = moving_average(y, window=100)
+    # Truncate x
+    x = x[len(x) - len(y):]
+    fig = plt.figure(title, figsize=(12,5))
+    plt.plot(x, y)
+    plt.xlabel('Number of Timesteps')
+    plt.ylabel('Rewards')
+    plt.title(title + " Smoothed A2C after 80,00,000 Timesteps")
+    plt.grid()
+    plt.show()
+
+plot_results("log_dir_A2C_8")
+```
 
 ## Comaprison between PPO & A2C Algorithms
 
