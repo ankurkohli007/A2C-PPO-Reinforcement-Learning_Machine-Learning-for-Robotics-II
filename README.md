@@ -367,6 +367,7 @@ for i in range(350):
 
 imageio.mimsave("lunar lander_PPO_8.gif", [np.array(img) for i, img in enumerate(images) if i%2 == 0], fps=29)
 ```
+* **Note:** For the full code [click here](https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/main/LunarLander.ipynb).
 
 ## Comaprison between PPO & A2C Algorithms
 
