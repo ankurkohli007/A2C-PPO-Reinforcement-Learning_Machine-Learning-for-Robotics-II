@@ -299,7 +299,12 @@ env = make_vec_env("LunarLander-v2", n_envs=1,monitor_dir="log_dir_A2C_8")
 model = A2C.load(path="log_dir_A2C_8/best_model.zip")
 ```
 
-* **Note:** For PPO algorithm, change the *log_directory* under *env* command line such as ```log_dir_A2C_8```. Also, for model change ```A2C.load``` & in path add ```log_dir_A2C_8/best_model.zip```.
+* **Note:** For PPO algorithm, change the *log_directory* under *env* command line such as ```log_dir_A2C_8```. Also, for model change ```A2C.load``` & in path add ```log_dir_A2C_8/best_model.zip```. Below is the code for PPO algorthm:
+
+```python
+env = make_vec_env("LunarLander-v2", n_envs=1,monitor_dir="log_dir_PPO_8")
+model = PPO.load(path="log_dir_PPO_8/best_model.zip")
+```
 
 ## Comaprison between PPO & A2C Algorithms
 
