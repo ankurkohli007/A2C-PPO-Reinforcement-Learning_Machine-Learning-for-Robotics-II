@@ -331,6 +331,43 @@ The above code provides the uses of the *evaluate_policy* function from the Stab
 
 * ```print("Mean & Std Reward after {} max run is {} & {}".format(10,mean_reward, std_reward))```; this line of code prints the mean and standard deviation of the total rewards obtained by the policy over the specified number of episodes (```n_eval_episodes=10```). The values are displayed in the message "Mean & Std Reward after 10 max run is <mean_reward> & <std_reward>".
 
+#### GIF of Tained Agent
+
+In this part, we created the GIF of the Trained Agent and the code given below shows how the GIF is created:
+
+```python
+env = make_vec_env("LunarLander-v2", n_envs=1)
+model = A2C.load(path="log_dir_A2C_8/best_model.zip")
+
+images = []
+obs = env.reset()
+img = env.render(mode="rgb_array")
+for i in range(350):
+    images.append(img)
+    action, _ = model.predict(obs)
+    obs, _, _ ,_ = env.step(action)
+    img = env.render(mode="rgb_array")
+
+imageio.mimsave("lunar lander_A2C_8.gif", [np.array(img) for i, img in enumerate(images) if i%2 == 0], fps=29)
+```
+* **Note:** For PPO algirthm, everything remains the same but minor changes to be made such as load PPO path and trained model ```PPO.load(path="log_dir_PPO_8/best_model.zip")```. Below is the code which shows the PPO algorithm implementation for GIF of trained PPO model:
+
+```python
+env = make_vec_env("LunarLander-v2", n_envs=1)
+model = PPO.load(path="log_dir_PPO_8/best_model.zip")
+
+images = []
+obs = env.reset()
+img = env.render(mode="rgb_array")
+for i in range(350):
+    images.append(img)
+    action, _ = model.predict(obs)
+    obs, _, _ ,_ = env.step(action)
+    img = env.render(mode="rgb_array")
+
+imageio.mimsave("lunar lander_PPO_8.gif", [np.array(img) for i, img in enumerate(images) if i%2 == 0], fps=29)
+```
+
 ## Comaprison between PPO & A2C Algorithms
 
 From the aforementioned task implementation, general comparsion of the two stated algorithms is concluded below:
