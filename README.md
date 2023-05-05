@@ -305,6 +305,24 @@ model = A2C.load(path="log_dir_A2C_8/best_model.zip")
 env = make_vec_env("LunarLander-v2", n_envs=1,monitor_dir="log_dir_PPO_8")
 model = PPO.load(path="log_dir_PPO_8/best_model.zip")
 ```
+#### Stable Baseline 3 Evaluation Function
+
+Stable Baselines 3 (SB3) is a popular library for training and evaluating reinforcement learning models. SB3 provides several evaluation functions that can be used to assess the performance of a trained RL model. For this task, **evaluate_policy** function is used to accomplish the desired goal.
+
+**evaluate_policy**: This function evaluates a given policy (i.e., the learned behavior of the RL agent) in a given environment over a specified number of episodes. It returns the mean and standard deviation of the total rewards obtained by the policy, as well as the mean and standard deviation of the episode lengths. The code below is shows how the aforementioned function is used for the evaluation of the trained model.
+
+```python
+mean_reward, std_reward = evaluate_policy(model, env,n_eval_episodes=10, render=True, deterministic=True)
+print("Mean & Std Reward after {} max run is {} & {}".format(10,mean_reward, std_reward)) 
+```
+
+The above code provides the uses of the *evaluate_policy* function from the Stable Baselines 3 library to evaluate a trained RL model (model) in a given environment (env). Below is the brief description of the code:
+
+* ```evaluate_policy(model, env, n_eval_episodes=10, render=True, deterministic=True)```; this line of code evaluates the given policy (model) in the given environment (env) over a specified number of episodes ```(n_eval_episodes=10)```.
+
+* ```mean_reward, std_reward = evaluate_policy(model, env,n_eval_episodes=10, render=True, deterministic=True)```; this line of code stores the mean and standard deviation of the total rewards obtained by the policy in the variables ```mean_reward``` and ```std_reward```, respectively. These values are calculated by the ```evaluate_policy``` function.
+
+* ```print("Mean & Std Reward after {} max run is {} & {}".format(10,mean_reward, std_reward))```; this line of code prints the mean and standard deviation of the total rewards obtained by the policy over the specified number of episodes (```n_eval_episodes=10```). The values are displayed in the message "Mean & Std Reward after 10 max run is <mean_reward> & <std_reward>".
 
 ## Comaprison between PPO & A2C Algorithms
 
