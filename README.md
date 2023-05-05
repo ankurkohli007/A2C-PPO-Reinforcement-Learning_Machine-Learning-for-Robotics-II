@@ -292,6 +292,8 @@ plot_results("log_dir_A2C_8")
 
 #### Evaluation 
 
+Here evaluated the performance of a trained model in a simulated environment through a set of metrics that reflect the agent's ability to learn and make good decisions.
+
 ```python
 env = make_vec_env("LunarLander-v2", n_envs=1,monitor_dir="log_dir_A2C_8")
 model = A2C.load(path="log_dir_A2C_8/best_model.zip")
