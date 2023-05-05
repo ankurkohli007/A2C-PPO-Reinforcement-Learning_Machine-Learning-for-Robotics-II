@@ -33,6 +33,14 @@ The solution for the **Lunar Lander** problem using RL involves training an AI a
 
 In summary, the solution for the Lunar Lander problem using RL involves defining the state space, action space, and reward function, choosing an RL algorithm, training the RL agent, evaluating its performance, and iteratively improving it. Through this process, the RL agent can learn to control the spacecraft's thrusters to achieve a safe landing on the moon's surface with minimal fuel consumption and without crashing.
 
+## Stable Baseline3 (SB3)
+
+For this task Stable Baseline3 (SB3) library is used to accomplish the goal.
+
+[Stable Baselines 3 (SB3)](https://stable-baselines3.readthedocs.io/en/master/) is a popular library for training and evaluating reinforcement learning models. SB3 also provides several utility functions for preprocessing and visualizing RL data, as well as a unified interface for defining and training RL models. Additionally, it supports parallel training on multiple CPU cores and can be easily integrated with popular RL benchmarks and environments, such as [OpenAI Gym](https://www.gymlibrary.dev/).
+
+Overall, SB3 is a powerful and flexible library for training and evaluating RL models that has been widely adopted by the research community and industry practitioners alike.
+
 ## Parameter & Environment Information
 
 This environment is part of the [Box2D environments](https://www.gymlibrary.dev/environments/box2d/).
@@ -91,7 +99,6 @@ env = gym.make("LunarLander-v2", render_mode="human")
 print("The Action inter is descrete {}".format(env.action_space.n))
 print("Shape of Observation is {}".format(env.observation_space.sample().shape))
 ```
-
 ## Important Libraries To Install
 
 ```
