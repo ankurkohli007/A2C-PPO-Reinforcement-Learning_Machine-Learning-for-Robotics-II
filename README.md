@@ -290,6 +290,13 @@ plot_results("log_dir_A2C_8")
 ```
 * **Note:** For PPO algorithm, change the *log_directory* under *plot_results* command line such as ```plot_results("log_dir_PPO_8")```. There are different names for different timesteps such as for 50,00,000 ```log_dir_A2C``` & ```log_dire_PPO``` and for 80,00,000 ```log_dir_A2C_8``` & ```log_dir_PPO_8```.  
 
+#### Evaluation 
+
+```python
+env = make_vec_env("LunarLander-v2", n_envs=1,monitor_dir="log_dir_A2C_8")
+model = A2C.load(path="log_dir_A2C_8/best_model.zip")
+```
+
 ## Comaprison between PPO & A2C Algorithms
 
 From the aforementioned task implementation, general comparsion of the two stated algorithms is concluded below:
