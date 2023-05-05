@@ -402,4 +402,3 @@ From the aforementioned task implementation, general limitation of the two state
 * Mnih, V., Badia, P. A.,  Mirza, M., Graves, A., Harley, T., Lillicrap, P. T., Silver, D., & Kavukcuoglu, K. (2017). Proximal Policy Optimization Algorithms. In OpenAI.
 
 * Schulman, J., Wolski, F.,  Dhariwal, P., Radford, A., & Klimov, O. (2016). Asynchronous Methods for Deep Reinforcement Learning. Proceedings of the 33rd International Conference on Machine Learning, New York, NY, USA, Vol. 40.
-
