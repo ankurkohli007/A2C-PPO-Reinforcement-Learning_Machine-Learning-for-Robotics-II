@@ -169,6 +169,10 @@ The performance of the baseline model can be evaluated by measuring its success 
 
 ![Alt Text](lander_base.gif)
 
+<p align="center">
+  <img width="1000" height="260" src="https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/d8041c0cccb18942051cfe8085b63f3d7d396f26/lander_base.gif">
+</p>
+
 Overall, a baseline model in Machine Learning Reinforcement Learning is an essential starting point for evaluating the effectiveness of more complex models and determining if the additional complexity is justified. It provides a reference point for comparing different algorithms and feature representations and can help researchers identify areas for further improvement.
 
 #### Reinforcement Learning (RL) For Training The Model
