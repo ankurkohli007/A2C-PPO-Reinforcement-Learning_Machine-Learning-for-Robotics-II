@@ -379,6 +379,22 @@ imageio.mimsave("lunar lander_PPO_8.gif", [np.array(img) for i, img in enumerate
 ```
 * **Note:** For the full code [click here](https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/main/LunarLander.ipynb).
 
+## Outcomes
+
+This section will describes the experimental results which shows the performance of **Lunar Lander** using A2C & PPO algorithms. The use of these two algorithms the lander learns to optimize its actions based on feedback from its environment and a defined reward system. The training process involves simulating various scenarios and allowing the lander to explore different actions and learn from the consequences.
+
+The gif below shows the performance of lunar lander trained for **5 millions** timesteps using **A2C algorithm**.
+
+<p align="center">
+  <img width="600" height="400" src="https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/1e7276406509351cd013c209ac6cfedd7e226ad9/lunar%20lander_A2C.gif">
+</p>
+<p>
+    <em>A2C 5 millions timesteps</em>
+</p>
+<p align="center">
+  <img width="600" height="400" src="https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/8f0fe6ce6978d7798829cea7f9d58a88be0ae668/lunar%20lander_A2C_8.gif">
+</p>
+
 ## Comaprison between PPO & A2C Algorithms
 
 From the aforementioned task implementation, general comparsion of the two stated algorithms is concluded below:
