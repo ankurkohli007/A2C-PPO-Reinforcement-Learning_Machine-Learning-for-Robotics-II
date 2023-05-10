@@ -171,10 +171,18 @@ The performance of the baseline model can be evaluated by measuring its success 
   <img width="600" height="400" src="https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/d8041c0cccb18942051cfe8085b63f3d7d396f26/lander_base.gif">
 </p>
 
-The image below highlights performance of basline model for A2C and PPO algorithms for 5 millions & 8 millions timesteps.
+<p align="center">
+    <em>Baseline Model</em>
+</p>
+
+The table below highlights performance of basline model for A2C and PPO algorithms for 5 millions & 8 millions timesteps.
 
 <p align="center">
   <img width="600" height="400" src="https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/658ba2635b5597b9a2f3365ebd23eac0c1f4b019/baseline_model_values.png">
+</p>
+
+<p align="center">
+    <em>Table: Performance of Baseline Model</em>
 </p>
 
 Overall, a baseline model in Machine Learning Reinforcement Learning is an essential starting point for evaluating the effectiveness of more complex models and determining if the additional complexity is justified. It provides a reference point for comparing different algorithms and feature representations and can help researchers identify areas for further improvement.
