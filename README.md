@@ -409,6 +409,8 @@ The gif below shows the performance of lunar lander trained for **5 millions** t
     <em>A2C performnace on 8 millions timesteps</em>
 </p>
 
+The gif above express the performance of lunar lander trained for **8 millions** timesteps using **A2C algorithm**.
+
 ## Comaprison between PPO & A2C Algorithms
 
 From the aforementioned task implementation, general comparsion of the two stated algorithms is concluded below:
