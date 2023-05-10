@@ -398,7 +398,7 @@ The gif below shows the performance of lunar lander trained for **5 millions** t
 </p>
 
 <p align="center">
-    <em>A2C 5 millions timesteps</em>
+    <em>A2C performance on 5 millions timesteps</em>
 </p>
 
 <p align="center">
@@ -406,7 +406,7 @@ The gif below shows the performance of lunar lander trained for **5 millions** t
 </p>
 
 <p align="center">
-    <em>A2C 8 millions timesteps</em>
+    <em>A2C performnace on 8 millions timesteps</em>
 </p>
 
 ## Comaprison between PPO & A2C Algorithms
