@@ -388,12 +388,10 @@ The gif below shows the performance of lunar lander trained for **5 millions** t
 <p align="center">
   <img width="600" height="400" src="https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/1e7276406509351cd013c209ac6cfedd7e226ad9/lunar%20lander_A2C.gif">
 </p>
-<p>
+
+<p align="center">>
     <em>A2C 5 millions timesteps</em>
 </p>
-
-|:--:| 
-| *Space* |
 
 <p align="center">
   <img width="600" height="400" src="https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/8f0fe6ce6978d7798829cea7f9d58a88be0ae668/lunar%20lander_A2C_8.gif">
