@@ -468,11 +468,11 @@ The graphs below describes the **Learning Curve Smoothed PPO** performance after
 The above graph shows the Learning Curve Smoothed A2C after 5 miilions timesteps. It shows the performance of agent and graph is plotted between **Rewards** vs **Number of Timesteps**. Also, the below graph depicts Learning Curve Smoothed A2C after 8 miilions timesteps. It also highlights the performance of agent and graph is plotted between **Rewards** vs **Number of Timesteps**.  
   
 <p align="center">
-  <img width="600" height="400" src="https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/818f8317e3551966d63785674e85e87f1d3d70a6/A2C_Curve_8000000.png">
+  <img width="600" height="400" src="https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/fbc87f0915b7d0b2161c23698ef1ab7915cdab9e/PPO_Curve_8000000.png">
 </p>
 
 <p align="center">
-    <em>Learning Curve Smoothed A2C 8 millions timesteps</em>
+    <em>Learning Curve Smoothed PPO 8 millions timesteps</em>
 </p>
 
 ## Comaprison between PPO & A2C Algorithms
