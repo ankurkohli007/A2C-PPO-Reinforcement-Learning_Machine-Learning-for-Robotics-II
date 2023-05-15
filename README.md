@@ -475,6 +475,8 @@ As aforementioned, also above graph explains the Learning Curve Smoothed PPO aft
     <em>Learning Curve Smoothed PPO 8 millions timesteps</em>
 </p>
 
+For smooth the learning curve, enormous techniques can be implements. For this task most commonly method is used i.e. **moving average**. This computes the average performance metric over a 5 millions & 8 miilions number of timesteps and plotted that value instead. This helps to reduce the noise in the curve and provides a smoother representation of the agent's learning progress. By plotting the smoothed performance metric values over the training timesteps, it's observe a smoothed learning curve that provides a clearer indication of the agent's learning progress. Overall, smoothing the learning curve help to visualize the agent's learning progress more clearly and also reduce the influence of noisy fluctuations in the performance metric.
+
 ## Comaprison between PPO & A2C Algorithms
 
 From the aforementioned task implementation, general comparsion of the two stated algorithms is concluded below:
