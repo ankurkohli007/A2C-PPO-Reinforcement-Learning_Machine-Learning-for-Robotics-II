@@ -455,6 +455,26 @@ The gif below shows the performance of lunar lander trained for **5 millions** t
 
 The gif above express the performance of lunar lander trained for **8 millions** timesteps using **PPO algorithm**.
 
+The graphs below describes the **Learning Curve Smoothed PPO** performance after 5 millions & 8 millions timesteps. 
+
+<p align="center">
+  <img width="600" height="400" src="https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/35ca9c7f84e25246b222245b19cd021561323002/PPO_Curve_5000000.png">
+</p>
+
+<p align="center">
+    <em>Learning Curve Smoothed PPO 5 millions timesteps</em>
+</p>
+
+The above graph shows the Learning Curve Smoothed A2C after 5 miilions timesteps. It shows the performance of agent and graph is plotted between **Rewards** vs **Number of Timesteps**. Also, the below graph depicts Learning Curve Smoothed A2C after 8 miilions timesteps. It also highlights the performance of agent and graph is plotted between **Rewards** vs **Number of Timesteps**.  
+  
+<p align="center">
+  <img width="600" height="400" src="https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/818f8317e3551966d63785674e85e87f1d3d70a6/A2C_Curve_8000000.png">
+</p>
+
+<p align="center">
+    <em>Learning Curve Smoothed A2C 8 millions timesteps</em>
+</p>
+
 ## Comaprison between PPO & A2C Algorithms
 
 From the aforementioned task implementation, general comparsion of the two stated algorithms is concluded below:
