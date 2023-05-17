@@ -403,17 +403,7 @@ The gif below shows the performance of lunar lander trained for **5 millions** t
     <em>A2C performance on 5 millions timesteps</em>
 </p>
 
-<p align="center">
-  <img width="600" height="400" src="https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/8f0fe6ce6978d7798829cea7f9d58a88be0ae668/lunar%20lander_A2C_8.gif">
-</p>
-
-<p align="center">
-    <em>A2C performnace on 8 millions timesteps</em>
-</p>
-
-The gif above express the performance of lunar lander trained for **8 millions** timesteps using **A2C algorithm**.
-
-The graphs below express the **Learning Curve Smoothed A2C** performance after 5 millions & 8 millions timesteps. 
+The graphs below express the **Learning Curve Smoothed A2C** performance after **5 millions** timesteps. 
 
 <p align="center">
   <img width="600" height="400" src="https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/97c7a61ca2a29ed0608bceb318a5b84d34e69b0d/A2C_Curve_5000000.png">
@@ -423,7 +413,15 @@ The graphs below express the **Learning Curve Smoothed A2C** performance after 5
     <em>Learning Curve Smoothed A2C 5 millions timesteps</em>
 </p>
 
-The above graph shows the Learning Curve Smoothed A2C after 5 miilions timesteps. It shows the performance of agent and graph is plotted between **Rewards** vs **Number of Timesteps**. Also, the below graph depicts Learning Curve Smoothed A2C after 8 miilions timesteps. It also highlights the performance of agent and graph is plotted between **Rewards** vs **Number of Timesteps**.  
+The above graph shows the *Learning Curve Smoothed A2C* after *5 miilions* timesteps. It shows the performance of agent and graph is plotted between **Rewards** vs **Number of Timesteps**. Also, the below gif & graph depicts *Learning Curve Smoothed A2C* after *8 miilions* timesteps. It also highlights the performance of agent and graph is plotted between **Rewards** vs **Number of Timesteps**.  
+
+<p align="center">
+  <img width="600" height="400" src="https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/8f0fe6ce6978d7798829cea7f9d58a88be0ae668/lunar%20lander_A2C_8.gif">
+</p>
+
+<p align="center">
+    <em>A2C performnace on 8 millions timesteps</em>
+</p>
   
 <p align="center">
   <img width="600" height="400" src="https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/818f8317e3551966d63785674e85e87f1d3d70a6/A2C_Curve_8000000.png">
@@ -432,6 +430,8 @@ The above graph shows the Learning Curve Smoothed A2C after 5 miilions timesteps
 <p align="center">
     <em>Learning Curve Smoothed A2C 8 millions timesteps</em>
 </p>
+
+The gif & graph above shows the performance of lunar lander trained for **8 millions** timesteps using **A2C algorithm**.
 
 ##### PPO algorithm perfomance for 5 millions & 8 miilions timesteps 
 
