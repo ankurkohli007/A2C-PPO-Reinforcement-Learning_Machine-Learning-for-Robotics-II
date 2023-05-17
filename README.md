@@ -447,17 +447,7 @@ The gif below shows the performance of lunar lander trained for **5 millions** t
     <em>PPO performance on 5 millions timesteps</em>
 </p>
 
-<p align="center">
-  <img width="600" height="400" src="https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/f37fef9c8f8fe55f42731af0e9e9d3bf26b973d3/lunar%20lander_PPO_8.gif">
-</p>
-
-<p align="center">
-    <em>PPO performnace on 8 millions timesteps</em>
-</p>
-
-The gif above express the performance of lunar lander trained for **8 millions** timesteps using **PPO algorithm**.
-
-The graphs below describes the **Learning Curve Smoothed PPO** performance after 5 millions & 8 millions timesteps. 
+The graphs below express the **Learning Curve Smoothed PPO** performance after **5 millions** timesteps. 
 
 <p align="center">
   <img width="600" height="400" src="https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/35ca9c7f84e25246b222245b19cd021561323002/PPO_Curve_5000000.png">
@@ -467,7 +457,17 @@ The graphs below describes the **Learning Curve Smoothed PPO** performance after
     <em>Learning Curve Smoothed PPO 5 millions timesteps</em>
 </p>
 
-As aforementioned, also above graph explains the Learning Curve Smoothed PPO after 5 miilions timesteps. It shows the performance of agent and graph is plotted between **Rewards** vs **Number of Timesteps**. Also, the below graph defines Learning Curve Smoothed PPO after 8 miilions timesteps. It also highlights the performance of agent and graph is plotted between **Rewards** vs **Number of Timesteps**.  
+The above graph shows the *Learning Curve Smoothed PPO* after *5 miilions* timesteps. It shows the performance of agent and graph is plotted between **Rewards** vs **Number of Timesteps**. Also, the below gif & graph depicts *Learning Curve Smoothed PPO* after *8 miilions* timesteps. It also highlights the performance of agent and graph is plotted between **Rewards** vs **Number of Timesteps**.  
+
+<p align="center">
+  <img width="600" height="400" src="https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/f37fef9c8f8fe55f42731af0e9e9d3bf26b973d3/lunar%20lander_PPO_8.gif">
+</p>
+
+<p align="center">
+    <em>PPO performnace on 8 millions timesteps</em>
+</p>
+
+The graphs below express the **Learning Curve Smoothed PPO** performance after **8 millions** timesteps. 
   
 <p align="center">
   <img width="600" height="400" src="https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/fbc87f0915b7d0b2161c23698ef1ab7915cdab9e/PPO_Curve_8000000.png">
@@ -476,6 +476,8 @@ As aforementioned, also above graph explains the Learning Curve Smoothed PPO aft
 <p align="center">
     <em>Learning Curve Smoothed PPO 8 millions timesteps</em>
 </p>
+
+The gif & graph above shows the performance of lunar lander trained for **8 millions** timesteps using **PPO algorithm**.
 
 For smooth the learning curve, enormous techniques can be implements. For this task most commonly method is used i.e. **moving average**. This computes the average performance metric over a 5 millions & 8 miilions number of timesteps and plotted that value instead. This helps to reduce the noise in the curve and provides a smoother representation of the agent's learning progress. By plotting the smoothed performance metric values over the training timesteps, it's observe a smoothed learning curve that provides a clearer indication of the agent's learning progress. Overall, smoothing the learning curve help to visualize the agent's learning progress more clearly and also reduce the influence of noisy fluctuations in the performance metric.
 
