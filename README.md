@@ -435,7 +435,7 @@ The graphs below express the **Learning Curve Smoothed A2C** performance after *
 
 The gif & graph above shows the performance of lunar lander trained for **8 millions** timesteps using **A2C algorithm**.
 
-The image below highlights the mean and standard values of A2C algorithms after the model training at *5 millions* & *8 millions* number of timesteps.
+The table below highlights the mean and standard values of A2C algorithms after the model training at *5 millions* & *8 millions* number of timesteps.
 
 <p align="center">
   <img width="500" height="200" src="https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/52bbb3dfe63e263e747bafa24f8957efec1fd1dc/A2C_Mean_Standard_Values.png">
@@ -493,7 +493,7 @@ The gif & graph above shows the performance of lunar lander trained for **8 mill
 
 For smooth the learning curve, enormous techniques can be implements. For this task most commonly method is used i.e. **moving average**. This computes the average performance metric over a 5 millions & 8 miilions number of timesteps and plotted that value instead. This helps to reduce the noise in the curve and provides a smoother representation of the agent's learning progress. By plotting the smoothed performance metric values over the training timesteps, it's observe a smoothed learning curve that provides a clearer indication of the agent's learning progress. Overall, smoothing the learning curve help to visualize the agent's learning progress more clearly and also reduce the influence of noisy fluctuations in the performance metric.
 
-The image below highlights the mean and standard values of PPO algorithms after the model training at *5 millions* & *8 millions* number of timesteps.
+The table below highlights the mean and standard values of PPO algorithms after the model training at *5 millions* & *8 millions* number of timesteps.
 
 <p align="center">
   <img width="500" height="200" src="https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/bafc980cdd20a564cb98b6a355ea2c4cd2033578/PPO_Mean_Standard_Values.png">
