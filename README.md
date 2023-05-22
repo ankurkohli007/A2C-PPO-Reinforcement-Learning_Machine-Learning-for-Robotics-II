@@ -178,7 +178,7 @@ The performance of the baseline model can be evaluated by measuring its success 
 The table below highlights performance of basline model for A2C and PPO algorithms for 5 millions & 8 millions timesteps.
 
 <p align="center">
-  <img width="600" height="400" src="https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/658ba2635b5597b9a2f3365ebd23eac0c1f4b019/baseline_model_values.png">
+  <img width="700" height="400" src="https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/658ba2635b5597b9a2f3365ebd23eac0c1f4b019/baseline_model_values.png">
 </p>
 
 <p align="center">
