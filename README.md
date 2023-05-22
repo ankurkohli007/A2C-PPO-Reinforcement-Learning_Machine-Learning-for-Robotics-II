@@ -435,6 +435,14 @@ The graphs below express the **Learning Curve Smoothed A2C** performance after *
 
 The gif & graph above shows the performance of lunar lander trained for **8 millions** timesteps using **A2C algorithm**.
 
+The image below highlights the mean and standard values after the model training at *5 millions* & *8 millions* number of timesteps.
+
+<p align="center">
+  <img width="600" height="400" src="https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/52bbb3dfe63e263e747bafa24f8957efec1fd1dc/A2C_Mean_Standard_Values.png">
+</p>
+
+In reinforcement learning, the mean and standard deviation are not typically used to describe the learning process or performance. Instead, key concepts such as the value function and Q-values are more commonly employed. The value function estimates the expected return or reward from a specific state or state-action pair, while Q-values estimate the expected return by taking a particular action in a given state. These concepts guide the decision-making process and help agents maximize their cumulative rewards over time.
+
 ##### PPO algorithm perfomance for 5 millions & 8 miilions timesteps 
 
 The gif below shows the performance of lunar lander trained for **5 millions** timesteps using **PPO algorithm**.
