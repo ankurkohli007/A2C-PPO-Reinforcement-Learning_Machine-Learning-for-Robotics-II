@@ -505,7 +505,6 @@ The table below highlights the mean and standard values of PPO algorithms after 
 
 In reinforcement learning, the mean and standard deviation are not typically used to describe the learning process or performance. Instead, key concepts such as the value function and Q-values are more commonly employed. The value function estimates the expected return or reward from a specific state or state-action pair, while Q-values estimate the expected return by taking a particular action in a given state. These concepts guide the decision-making process and help agents maximize their cumulative rewards over time.
 
-
 ## Comaprison between PPO & A2C Algorithms
 
 From the aforementioned task implementation, general comparsion of the two stated algorithms is concluded below:
