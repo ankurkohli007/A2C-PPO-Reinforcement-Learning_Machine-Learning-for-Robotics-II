@@ -489,6 +489,15 @@ The gif & graph above shows the performance of lunar lander trained for **8 mill
 
 For smooth the learning curve, enormous techniques can be implements. For this task most commonly method is used i.e. **moving average**. This computes the average performance metric over a 5 millions & 8 miilions number of timesteps and plotted that value instead. This helps to reduce the noise in the curve and provides a smoother representation of the agent's learning progress. By plotting the smoothed performance metric values over the training timesteps, it's observe a smoothed learning curve that provides a clearer indication of the agent's learning progress. Overall, smoothing the learning curve help to visualize the agent's learning progress more clearly and also reduce the influence of noisy fluctuations in the performance metric.
 
+The image below highlights the mean and standard values of PPO algorithms after the model training at *5 millions* & *8 millions* number of timesteps.
+
+<p align="center">
+  <img width="500" height="200" src="https://github.com/ankurkohli007/A2C-PPO-Reinforcement-Learning_Machine-Learning-for-Robotics-II/blob/bafc980cdd20a564cb98b6a355ea2c4cd2033578/PPO_Mean_Standard_Values.png">
+</p>
+
+In reinforcement learning, the mean and standard deviation are not typically used to describe the learning process or performance. Instead, key concepts such as the value function and Q-values are more commonly employed. The value function estimates the expected return or reward from a specific state or state-action pair, while Q-values estimate the expected return by taking a particular action in a given state. These concepts guide the decision-making process and help agents maximize their cumulative rewards over time.
+
+
 ## Comaprison between PPO & A2C Algorithms
 
 From the aforementioned task implementation, general comparsion of the two stated algorithms is concluded below:
