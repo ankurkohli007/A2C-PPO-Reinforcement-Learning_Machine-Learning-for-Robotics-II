@@ -519,7 +519,7 @@ From the aforementioned task implementation, general comparsion of the two state
 
 * Both algorithms can struggle to learn long-term dependencies in the Lunar Lander environment and may require additional techniques such as recurrent networks or curriculum learning to overcome this limitation.
 
-## Limitations of PPO & A2C Algorithms 
+## Limitations of A2C & PPO Algorithms 
 
 From the aforementioned task implementation, general limitation of the two stated algorithms is concluded below:
 
